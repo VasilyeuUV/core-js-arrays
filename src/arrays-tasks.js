@@ -173,8 +173,9 @@ function isSameLength(arr) {
  *    isValueEqualsIndex([2, 1, 0, 4, 5]) => true
  *    isValueEqualsIndex([10, 20, 30, 40, 50]) => false
  */
-function isValueEqualsIndex(/* arr */) {
-  throw new Error('Not implemented');
+function isValueEqualsIndex(arr) {
+  // return arr.filter((v, i, a) => v > -1 && v < a.length).length !== 0;
+  return arr.some((v, i, a) => v > -1 && v < a.length);
 }
 
 /**
